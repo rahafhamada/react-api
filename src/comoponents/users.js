@@ -20,7 +20,7 @@ const UsersPage = () => {
     return (
         <div>
             {loading? "loading ...."  :users.map((item) =>{
-                return <div  key={item.id}><h1 >{item.name}</h1>
+                return <div  key={item.id}><h1 style={{color:"red"}}>{item.name}</h1>
                 <h2> {item.name} works at {item.company.name} </h2></div>
 
             }) }
